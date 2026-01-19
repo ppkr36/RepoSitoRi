@@ -13,8 +13,8 @@ namespace Calculator
 public partial class Form1 : Form
     {
         // Переменные для хранения данных калькулятора
-   private double firstNumber = 0;
-      private double secondNumber = 0;
+   private double num1 = 0;
+      private double num2 = 0;
        private string operation = "";
        private bool isNewNumber = true;
         public Form1()
@@ -44,7 +44,7 @@ public partial class Form1 : Form
            Button btn = (Button)sender;
             if (!isNewNumber)
            {
-               firstNumber = double.Parse(txtbox.Text);
+               num1 = double.Parse(txtbox.Text);
             }
             operation = btn.Text;
             isNewNumber = true;
@@ -59,11 +59,11 @@ public partial class Form1 : Form
      {
             if (!isNewNumber)
             {
-                secondNumber = double.Parse(txtbox.Text);
+                num2 = double.Parse(txtbox.Text);
 
                 try
                 {
-                    double result = Calculate(firstNumber, secondNumber, operation);
+                    double result = Calculate(num1, num2, operation);
                    txtbox.Text = result.ToString();
                }
                 catch (DivideByZeroException)
@@ -100,26 +100,29 @@ public partial class Form1 : Form
             }
        }
 
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            txtbox.Text = "0";
-            firstNumber = 0;
-            secondNumber = 0;
-            operation = "0";
-            isNewNumber = true;
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (txtbox.Text.Length > 1)
             {
                 txtbox.Text = txtbox.Text.Substring(0, txtbox.Text.Length - 1);
-            } 
-          else
+            }
+            else
             {
                 txtbox.Text = "0";
                 isNewNumber = true;
             }
+        }
+
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtbox.Text = "0";
+            num1 = 0;
+            num2 = 0;
+            operation = "0";
+            isNewNumber = true;
+        
         }
 
         private void buttondes_Click(object sender, EventArgs e)
