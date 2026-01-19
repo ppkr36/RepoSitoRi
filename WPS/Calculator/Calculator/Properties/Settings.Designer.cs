@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tomilov_RPO6_WPS.Properties
+namespace Calculator.Properties
 {
 
 

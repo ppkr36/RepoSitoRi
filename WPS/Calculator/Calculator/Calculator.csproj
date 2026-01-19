@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{52724374-D983-48FC-90DA-854373822B2D}</ProjectGuid>
+    <ProjectGuid>{25AAF7B4-3B14-44EF-8D8F-83096B6B4D63}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Tomilov_RPO6_WPS</RootNamespace>
-    <AssemblyName>Tomilov_RPO6_WPS</AssemblyName>
+    <RootNamespace>Calculator</RootNamespace>
+    <AssemblyName>Calculator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
