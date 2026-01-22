@@ -2,7 +2,6 @@
 int main() {
 	system("chcp 1251");
 	char word[30];
-	int count = 0;
 	std::cout << "¬ведите слово: ";
 	std::cin >> word;
 	for (int i = 0; i < strlen(word) - 1; i++) {
