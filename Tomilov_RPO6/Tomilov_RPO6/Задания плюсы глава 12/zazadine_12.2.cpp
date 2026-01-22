@@ -2,7 +2,7 @@
 int myFunc(char words[]) {
 	int count = 0;
 	while (words[count] != '\0') {
-		words[0 + count];
+		words[count];
 		count++;
 	}
 	return count;
