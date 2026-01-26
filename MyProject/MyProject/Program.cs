@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System.Globalization;
+
+class Program
 {
     static void Main()
     {
@@ -62,23 +64,38 @@
         //    Console.WriteLine("\n" + sum);
 
 
-        string[] variants = { "КАМЕНЬ", "НОЖНИЦЫ", "БУМАГА" };
+        //string[] variants = { "КАМЕНЬ", "НОЖНИЦЫ", "БУМАГА" };
 
-        int pc = new Random().Next(0, 3);
-       
-            Console.WriteLine("1 - камень 2 - ножницы 3 - бумага");
-            int user_input = int.Parse(Console.ReadLine());
-            Console.WriteLine($"PC: {variants[pc]} || User: {variants[user_input - 1]}");
+        //int pc = new Random().Next(0, 3);
 
-            bool win = user_input % 3 == pc;
-            bool tie = user_input - 1 == pc;
+        //    Console.WriteLine("1 - камень 2 - ножницы 3 - бумага");
+        //    int user_input = int.Parse(Console.ReadLine());
+        //    Console.WriteLine($"PC: {variants[pc]} || User: {variants[user_input - 1]}");
 
-            if (win) Console.WriteLine("Победил user");
-            else if (tie) Console.WriteLine("Это ничья");
-            else Console.WriteLine("Победил пк");
+        //    bool win = user_input % 3 == pc;
+        //    bool tie = user_input - 1 == pc;
 
-        
+        //    if (win) Console.WriteLine("Победил user");
+        //    else if (tie) Console.WriteLine("Это ничья");
+        //    else Console.WriteLine("Победил пк");
 
+        Random rand = new Random();
+        int[][] nums = new int[1][];
+        nums[0] = new int[5];
+        for (int i = 0; i < nums.Length; i++)
+            for (int j = 0; j < nums[i].Length; j++)
+            {
+                nums[i][j] = rand.Next(0, 101);
+            }
+        int[,] ars = new int[1, 5];
+        for (int i = 0; i < ars.GetLength(0); i++)
+            for (int j = 0; j < ars.GetLength(1); j++)
+            {
+                ars[i, j] = nums[i][j];
+            }
+        foreach (int i in ars)
+        {
+            Console.WriteLine(i);
+        }
     }
-       
 }
