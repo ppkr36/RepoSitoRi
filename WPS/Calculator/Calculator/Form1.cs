@@ -12,7 +12,7 @@ namespace Calculator
 {
 public partial class Form1 : Form
     {
-        // Переменные для хранения данных калькулятора
+      
    private double num1 = 0;
       private double num2 = 0;
        private string operation = "";
@@ -21,8 +21,7 @@ public partial class Form1 : Form
        {
            InitializeComponent();
        }
-        //Object sender объект который обрабатывает значение при нажатии ( действии )
-       // EventArgs хранит в себе значение элемента который был в действии.
+      
        private void NumberClick(object sender, EventArgs e)
        {
            Button bnt = (Button)sender;
@@ -31,14 +30,14 @@ public partial class Form1 : Form
                txtbox.Text = bnt.Text;
               isNewNumber = false;
             } else {
-               // Проверка на максимальную длину
+   
                if (txtbox.Text.Length < 15)
                {
                    txtbox.Text += bnt.Text;
                }
            }
        }
-        // Обработчик операций
+ 
        private void Operation_Click(object sender, EventArgs e)
        {
            Button btn = (Button)sender;
