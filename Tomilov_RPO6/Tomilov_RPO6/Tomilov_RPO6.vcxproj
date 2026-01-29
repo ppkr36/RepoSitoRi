@@ -19,7 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="zazadine_12.9.cpp" />
+    <ClCompile Include="zazadine_13.4.cpp" />
+    <ClCompile Include="zazadine_13.5.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

@@ -20,5 +20,6 @@ int main() {
 	std::cout << "до какого удалить ";
 	int end;
 	std::cin >> end;
+	str.erase(str.begin() + start, str.begin() + end);
 	std::cout << str;
 }
