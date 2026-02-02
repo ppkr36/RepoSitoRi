@@ -79,23 +79,90 @@ class Program
         //    else if (tie) Console.WriteLine("Это ничья");
         //    else Console.WriteLine("Победил пк");
 
-        Random rand = new Random();
-        int[][] nums = new int[1][];
-        nums[0] = new int[5];
+        //Random rand = new Random();
+        //int[][] nums = new int[1][];
+        //nums[0] = new int[5];
+        //for (int i = 0; i < nums.Length; i++)
+        //    for (int j = 0; j < nums[i].Length; j++)
+        //    {
+        //        nums[i][j] = rand.Next(0, 101);
+        //    }
+        //int[,] ars = new int[1, 5];
+        //for (int i = 0; i < ars.GetLength(0); i++)
+        //    for (int j = 0; j < ars.GetLength(1); j++)
+        //    {
+        //        ars[i, j] = nums[i][j];
+        //    }
+        //foreach (int i in ars)
+        //{
+        //    Console.WriteLine(i);
+        //}
+        //int num = 0;
+
+
+
+
+        // task1
+
+        //    Random rand = new Random();
+        //    int[] nums = new int[15];
+        //    for (int i = 0; i < nums.Length; i++)
+        //    {
+        //        nums[i] = rand.Next(1, 101);
+        //        if ((nums[i] % 2) == 0)
+        //        {
+        //            Console.WriteLine(nums[i]);
+        //        }
+
+        //    }
+        //}
+
+        //task2
+        //int count_p = 0, count_o = 0, count_0 = 0;
+        //    Random rand = new Random();
+        //int[] nums = new int[20];
+        //for (int i = 0; i < nums.Length; i++)
+        //{
+        //    nums[i] = rand.Next(0, 101)-50;
+        //    if (nums[i] < 0) count_o++;
+        //    if (nums[i] > 0) count_p++;
+        //    if (nums[i] == 0) count_0++;
+        //    Console.WriteLine(nums[i]);
+        //}
+        //Console.WriteLine(count_p + " -Кол-во положительных\n" +count_o + " -Кол-во отрицательных\n"+ count_0 +" -Кол-во нулей"  );
+
+        //task3
+        //    Random rand = new Random();
+        //    int sum = 0;
+        //    int[] nums = new int[10];
+        //    for (int i = 0; i < nums.Length; i++)
+        //    {
+        //        nums[i] = rand.Next(1, 11);
+        //        if (i % 2 == 0)
+        //        {
+        //            sum += nums[i];
+        //        }
+        //        Console.WriteLine(nums[i]);
+        //    }
+        //    Console.WriteLine("\n" +sum);
+        //
+
+        //task4
+         Random rand = new Random();
+        int[] nums = new int[12];
         for (int i = 0; i < nums.Length; i++)
-            for (int j = 0; j < nums[i].Length; j++)
-            {
-                nums[i][j] = rand.Next(0, 101);
-            }
-        int[,] ars = new int[1, 5];
-        for (int i = 0; i < ars.GetLength(0); i++)
-            for (int j = 0; j < ars.GetLength(1); j++)
-            {
-                ars[i, j] = nums[i][j];
-            }
-        foreach (int i in ars)
         {
-            Console.WriteLine(i);
+            nums[i] = rand.Next(1, 101);
+            Console.WriteLine(nums[i]);
+
+        }
+        for (int i = 0; i < nums.Length; i++)
+        {
+        if (nums[i] == nums.Max())
+        {
+            Console.WriteLine("\nМаксимальный элемент - " + nums[i] + "под индексом " + i);
+        }
         }
     }
+
 }
