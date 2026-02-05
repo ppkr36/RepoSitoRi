@@ -9,9 +9,9 @@ int main() {
 	std::getline(file, text, '\0');
 	file.close();
 	for (int i = text.size() - 1; i >= 0; i--) {
+		rev_file << text_rev;
 		text_rev.push_back(text.at(i));
 	}
 	std::ofstream rev_file("reverse.txt");
-	rev_file << text_rev;
 	rev_file.close();
 }
