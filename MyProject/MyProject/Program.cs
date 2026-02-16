@@ -1,9 +1,65 @@
 ﻿using System.Globalization;
-
-class Program
+class Human
 {
-    static void Main()
+    public string Name;
+    public int Age;
+    private double Height;
+    private double Weight;
+    
+    public int GetWeight() { return Weight;}
+    public void SetWeight(int Neweight)
     {
+        Weight = Neweight;
+    }
+
+
+    public Human(string Name, int Age)
+    {
+        this.Name = Name;
+        this.Age = Age;
+    }
+
+    
+}                                                                                                                                                                                      
+//class Car                                                                                                                                                                                
+//{                                                                                                                                                                                      
+//    public string Brand;                                                                                                                                                               
+//    public string Model;                                                                                                                                                              
+//    public int Year;                                                                                                                                                                   
+//    public int Price;                                                                                                                                                                   
+//    public string Color;                                                                                                                                                                
+                                                                                                                                                                                      
+
+                                                                                                                                                                                          
+//    public Car(string Brand, string Model, int Year, int Price, string Color)                                                                                                                       
+//    {
+//        this.Brand = Brand;
+//        this.Model = Model; 
+//        this.Year = Year;   
+//        this.Price = Price;
+//        this.Color = Color;
+//    }
+//    public void display_info()
+//    {
+//        Console.WriteLine($"{Brand} {Model}, {Year} - года, цвет - {Color}, цена - {Price}");
+//    }
+//}
+//class Program
+//{
+    
+//    static void Main()
+//    {
+//        Car car_1 = new Car("машина", "мощная", 2026, 2400000, "Чёрный" );
+//        Car car_2 = new Car("автомобиль", "быстрый", 1924, 1000000, "Красный" );
+//        Car car_3 = new Car("машина", "два", 2005, 562362361, "Жёлтый" );
+
+//        car_1.display_info();
+//        car_2.display_info();
+//        car_3.display_info();
+         //Human petya = new Human("Петя", 30);
+        //Human vasya = new Human("Вася", 30);
+        //petya.Hello(vasya);
+        //vasya.Hello(petya);
 
         //Console.WriteLine("введите количество задач");
         //int amount = int.Parse(Console.ReadLine());
@@ -98,10 +154,6 @@ class Program
         //    Console.WriteLine(i);
         //}
         //int num = 0;
-
-
-
-
         // task1
 
         //    Random rand = new Random();
@@ -148,21 +200,21 @@ class Program
         //
 
         //task4
-         Random rand = new Random();
-        int[] nums = new int[12];
-        for (int i = 0; i < nums.Length; i++)
-        {
-            nums[i] = rand.Next(1, 101);
-            Console.WriteLine(nums[i]);
+        // Random rand = new Random();
+        //int[] nums = new int[12];
+        //for (int i = 0; i < nums.Length; i++)
+        //{
+        //    nums[i] = rand.Next(1, 101);
+        //    Console.WriteLine(nums[i]);
 
-        }
-        for (int i = 0; i < nums.Length; i++)
-        {
-        if (nums[i] == nums.Max())
-        {
-            Console.WriteLine("\nМаксимальный элемент - " + nums[i] + "под индексом " + i);
-        }
-        }
+        //}
+        //for (int i = 0; i < nums.Length; i++)
+        //{
+        //if (nums[i] == nums.Max())
+        //{
+        //    Console.WriteLine("\nМаксимальный элемент - " + nums[i] + "под индексом " + i);
+        //}
+        //}
     }
 
 }
