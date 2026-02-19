@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Задания плюсы глава 10\zazadine_10.3.cpp">
+    <ClCompile Include="bilet_24.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
