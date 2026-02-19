@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="bilet_9.cpp">
+    <ClCompile Include="Билеты\bilet_25.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
