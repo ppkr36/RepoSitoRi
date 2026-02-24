@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 int main() {
 	system("chcp 1251");
 
@@ -112,7 +113,8 @@ int main() {
 
 	//Метод Крамера
 	double arr[3][3]{{1,2,4},{-2, 1, -3},{3, -2, -5}};
-	double b1 = -5, b2 = 10, b3 = 3,x1,x2,x3,d;
+	double b1 = -5, b2 = 10, b3 = 3,x1,x2,x3;
+	std::string d;
 	for (int i = 0; i < 3; i++) {
 			std::cout << "\n";
 			for (int j = 0; j < 3; j++) {
@@ -131,6 +133,6 @@ int main() {
 	std::cout << "Шаг 1.Определитель основной матрицы		b1->" << b1 << "		b2->" << b2 << "		b3->" << b3;
 	std::cout << '\n';
 	std::cout << '\n';
-	d = "это чо то сложно реализовать на плусах"
+	d = "это чо то сложно реализовать на плусах";
 }
 

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="metod gaussa.cpp">
+    <ClCompile Include="bilet_25.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
