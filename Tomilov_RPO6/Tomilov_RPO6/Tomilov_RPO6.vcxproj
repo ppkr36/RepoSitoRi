@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+HEAD
     <ClCompile Include="bilet_25.cpp" />
 =======
     <ClCompile Include="Вкрестъкрестъ.cpp" />
