@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Tomilov_RPO6_cpp_oop.vcxproj" />
+  <Project Path="Tomilov_RPO_6_CPP.vcxproj" />
 </Solution>
