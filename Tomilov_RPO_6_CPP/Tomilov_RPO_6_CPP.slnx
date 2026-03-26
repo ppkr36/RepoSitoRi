@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Tomilov_RPO_6_CPP.vcxproj" />
+  <Project Path="Tomilov_RPO_6_CPP.vcxproj" Id="e90476f1-4967-4151-afe6-c893f03fbf76" />
 </Solution>
