@@ -1,16 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-class Bed {
-public:
-	std::string amount_m_,material_;
-	int price;
-	bool double_yar_;
-	Bed();
-	void redact();
-	void output();
-};
-
+#include "bed.hpp"
 Bed::Bed() {
 	amount_m_ = "ќдноспальна€";
 	material_ = "ƒерево";
@@ -33,24 +24,4 @@ void Bed::redact() {
 
 void Bed::output() {
 	std::cout << (double_yar_ ? "ƒву€русна€" : "ќдно€русна€") << " кровать из " << material_ << ", расчитана на " << amount_m_ << " человек, стоимость: " << price;
-}
-
-int main() {
-	system("chcp 1251");
-	std::cout << "¬ведите кол-во кроватей: ";
-	int amount,choice;
-	std::cin >> amount;
-	std::vector<Bed> beds (amount);
-	std::cout << "1.«аполнить самому\n2.ѕо умолчанию\n>_";
-	std::cin >> choice;
-	for (int i = 0; i < amount; i++) {
-	if (choice == 1) {
-		beds.at(i).redact();
-	}
-	}   
-
-	for (int i = 0; i < amount; i++) {
-		beds.at(i).output();
-	}
-
 }
