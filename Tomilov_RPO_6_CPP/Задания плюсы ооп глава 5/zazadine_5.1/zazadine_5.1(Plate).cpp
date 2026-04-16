@@ -22,4 +22,7 @@ Plate::Plate(std::string material, std::string proiz, double price, int height, 
 	weight_{ weight } {};
 
 void Plate::printPlitka() {
-std::cout << "\nПлитка из " << material_ << "; размеры (в ш г) в мм.: " << height_ << ", " << width_ << ", " << thickness_ << "; вес: " << weight_ << " грамм, " << "стоимость: " << price_ << " рублей, " << "производитель: " << proiz_;}
+std::cout << "\nПлитка из " << material_ << "; размеры (в ш г) в мм.: " << height_ << ", " 
+<< width_ << ", " << thickness_ << "; вес: " << weight_ << " грамм, " << "стоимость: " 
+<< price_ << " рублей, " << "производитель: " << proiz_;
+}

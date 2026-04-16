@@ -8,10 +8,11 @@ int main() {
 	std::string material, proiz;
 	double price;
 	int height, width, thickness, weight, index;
-	std::vector<Plate> plitki;
-	plitki.emplace_back();
-	plitki.emplace_back("Картон","ООО Блошиный Рынок",5.0,260,100,1,20);
-	plitki.emplace_back("Песок","Природа",0.0,99000000, 99000000, 4000, 324000000);
+	std::vector<Plate> plitki{
+		{"Картон","ООО Блошиный Рынок",5.0,260,100,1,20},
+		{"Песок","Природа",0.0,99000000, 99000000, 4000, 324000000},
+		{}
+	};
 	int cho = 0;
 	while (cho != 3) {
 		for (int i = 0; i < plitki.size(); i++) {
