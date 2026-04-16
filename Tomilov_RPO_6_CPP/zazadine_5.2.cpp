@@ -2,7 +2,6 @@
 #include <string>
 #include <vector>
 class Worker {
-public:
 	std::string name_;
 	std::string surename_;
 	std::string fathername_;
@@ -11,6 +10,7 @@ public:
 	std::string departament_;
 	int id_;
 	int age_;
+public:
 	Worker(int id) : name_{ "не указано" }, surename_{ "не указано" }, fathername_{ "не указано" }, gender_{ "не указано" }, position_{ "не указано" }, departament_{ "не указано" }, age_{ -1 } { id_ = id; }
 	Worker(int id, std::string name) : Worker(id) { name_ = name; }
 	Worker(int id, std::string name, std::string surename) : Worker(id, name) { surename_ = surename; }
@@ -31,6 +31,9 @@ public:
 		std::cout << "Возраст: " << age_ << "\n";
 		std::cout << "Должность: " << position_ << "\n";
 		std::cout << "Отдел: " << departament_ << "\n\n";
+	}
+	int getId() {
+		return id_;
 	}
 };
 
@@ -65,20 +68,21 @@ int main() {
 				if (index <= worksy.size() && index > 0) {
 					std::cin.ignore(1024, '\n');
 					std::cout << "Имя: " << "\n";
-					std::getline(std::cin, worksy.at(index).name_);
+					std::getline(std::cin, name);
 					std::cout << "Фамилия: " << "\n";
-					std::getline(std::cin, worksy.at(index).surename_);
+					std::getline(std::cin, surename);
 					std::cout << "Отчество: " << "\n";
-					std::getline(std::cin, worksy.at(index).fathername_);
+					std::getline(std::cin, fathername);
 					std::cout << "Пол: " << "\n";
-					std::getline(std::cin, worksy.at(index).gender_);
+					std::getline(std::cin, gender);
 					std::cout << "Возраст: " << "\n";
-					std::cin >> worksy.at(index).age_;
+					std::cin >> age;
 					std::cin.ignore(1024, '\n');
 					std::cout << "Должность: " << "\n";
-					std::getline(std::cin, worksy.at(index).position_);
+					std::getline(std::cin, position);
 					std::cout << "Отдел: " << "\n";
-					std::getline(std::cin, worksy.at(index).departament_);
+					std::getline(std::cin, departament);
+					worksy.at(index) =  Worker(worksy.at(index).getId(), name, surename, fathername, gender, position, departament, age);
 					system("cls");
 				}
 				else std::cout << "\nнекорректный индекс\n";
