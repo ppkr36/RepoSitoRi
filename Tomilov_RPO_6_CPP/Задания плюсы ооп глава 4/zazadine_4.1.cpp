@@ -32,7 +32,7 @@ void Bed::redact() {
 }
 
 void Bed::output() {
-	std::cout << (double_yar_ ? "ƒву€русна€" : "ќдно€русна€") << " кровать из " << material_ << ", расчитана на " << amount_m_ << " человек, стоимость: " << price;
+	std::cout << (double_yar_ ? "ƒву€русна€" : "ќдно€русна€") << " кровать из " << material_ << ", расчитана на " << amount_m_ << " человек, стоимость: " << price << "\n";
 }
 
 int main() {
