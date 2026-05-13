@@ -7,22 +7,22 @@ class Planet {
 	int amount_sputniks_, davlenie_;
 public:
 	Planet() {
-		std::cout << "Введите массу планеты: ";
+		std::cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
 		std::cin >> mass_;
 		std::cin.ignore(1024, '\n');
-		std::cout << "Введите название планеты: ";
+		std::cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
 		std::getline(std::cin, name_);
-		std::cout << "Введите состав атмосферы: ";
+		std::cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
 		std::getline(std::cin, atmospheric_composition_);
-		std::cout << "Введите кол-во спутников: ";
+		std::cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
 		std::cin >> amount_sputniks_;
-		std::cout << "Введите давление: ";
+		std::cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
 		std::cin >> davlenie_;
 		std::cout << "\n";
 	}
 	Planet(std::string atmospheric_composition, std::string name, double mass, int amount_sputniks, int davlenie) : atmospheric_composition_{ atmospheric_composition }, name_{ name }, mass_{ mass }, amount_sputniks_{ amount_sputniks }, davlenie_{ davlenie } {};
 	void planetVivod() {
-		std::cout << name_ << ":\n\t" << "Масса " << mass_ << " масс Земли\n\t" << "Состав атмосферы: " << atmospheric_composition_ << "\n\t" << "Давление у поверхности: " << davlenie_ << "\n\t" << "Количество спутников: " << amount_sputniks_ << "\n\n";
+		std::cout << name_ << ":\n\t" << "пїЅпїЅпїЅпїЅпїЅ " << mass_ << " пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ\n\t" << "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << atmospheric_composition_ << "\n\t" << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << davlenie_ << "\n\t" << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " << amount_sputniks_ << "\n\n";
 	}
 	Planet& setAtmosphericComposition(std::string atmospheric_composition){ 
 		if(atmospheric_composition != "") atmospheric_composition_ = atmospheric_composition;
@@ -52,18 +52,18 @@ public:
 };
 int main() {
 	system("chcp 1251");
-	std::cout << "Введите кол-во планет в системе: ";
+	std::cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
 	int amount;
 	std::cin >> amount;
 	std::vector<Planet> solar_system;
-	solar_system.emplace_back("Воздух", "Земля", 1, 1, 33);
-	solar_system.emplace_back("Не воздух", "Марс", 1.12, 2, 4); 
+	solar_system.emplace_back("пїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅпїЅ", 1, 1, 33);
+	solar_system.emplace_back("пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ", "пїЅпїЅпїЅпїЅ", 1.12, 2, 4); 
 	std::vector<Planet> system_of_planets(amount);
 	int cho = 0;
 	int cho_kak = 0;
-	std::cout << "Введите по какому полю, отсортировать планеты: \n1.По имени\n2.По составу атмосферы\n3.По массе\n4.По кол-ву спутников\n5.По давлению\n>_ ";
+	std::cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: \n1.пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ\n2.пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n3.пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ\n4.пїЅпїЅ пїЅпїЅпїЅ-пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n5.пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n>_ ";
 	std::cin >> cho;
-	std::cout << "Введите как сортировать\n1.По возрастанию\n2.По убыванию";
+	std::cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n1.пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ\n2.пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 	std::cin >> cho_kak;
 	for (int i = 0; i < system_of_planets.size(); i++) {
 		for (int j = 0; j < system_of_planets.size() - 1 - i; j++) {
