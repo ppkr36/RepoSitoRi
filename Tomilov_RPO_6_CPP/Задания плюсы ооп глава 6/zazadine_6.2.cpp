@@ -44,7 +44,7 @@ public:
 		else if (is_private_ == false)
 			throw std::runtime_error("� ��.�������� ������ �������� �����");
 		else if (expenses_ < 5000000 && is_private_ == true)
-			throw std::runtime_error("� ������� �������� � �������� ������ 5000000 ������ �������� �����");
+			throw std::out_of_range("� ������� �������� � �������� ������ 5000000 ������ �������� �����");
 	}
 	int getExpenses() const
 	{
